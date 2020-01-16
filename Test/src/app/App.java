@@ -25,4 +25,19 @@ public static double TestPricing(String asset,Boolean testDerivativePricing,doub
     }
 
 }
+
+
+public static double TestPricing2(String asset,double a,double b, double c){
+    if(asset=="Equity")
+    return a-b;
+    if(asset=="Future")
+    return a/b-c;
+    return 6;
+    }
+    public  double TestPricing3(String asset,double a,double b, double c){
+        if(asset=="ETF")
+        return a-b;
+        return 7;
+
+}
 }
