@@ -53,4 +53,23 @@ public static double TestPricing2(String asset,double a,double b, double c){
         return 7;
 
 }
+
+public Double[] TestPricing3WithArray(String asset,Double a,Double b, Double c){
+        
+    Double[] prices3 = new Double[3];
+   
+    if(asset=="ETF"){
+        prices3[0]=a;
+        prices3[1]=c;
+        prices3[2]=b;
+    }
+    else{
+        prices3[0]=3*a;
+        prices3[1]=c-a;
+        prices3[2]=c;
+    }
+    return prices3;
+
+
+}
 }
