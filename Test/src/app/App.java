@@ -11,7 +11,7 @@ public class App {
 
 public static double TestPricing(String asset,Boolean testDerivativePricing,double a,double b, double c){
     
-    Double assetPrice = 0;
+    Double assetPrice = 0.0;
     
     switch (asset) {
     case "RateSwap":
@@ -32,7 +32,7 @@ return assetPrice;
 
 
 public static double TestPricing2(String asset,double a,double b, double c){
-    Double assetPrice2 = 0;
+    Double assetPrice2 = 0.0;
     if(asset=="Equity")
     assetPrice2= a-b;
     if(asset=="Future")
