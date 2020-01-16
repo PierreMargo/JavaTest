@@ -32,11 +32,13 @@ return assetPrice;
 
 
 public static double TestPricing2(String asset,double a,double b, double c){
+    Double assetPrice2 = 0;
     if(asset=="Equity")
-    return a-b;
+    assetPrice2= a-b;
     if(asset=="Future")
-    return a/b-c;
-    return 6;
+    assetPrice2= a/b-c;
+    
+    return assetPrice2;
     }
 
 
