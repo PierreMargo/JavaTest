@@ -16,16 +16,21 @@ public static double TestPricing(String asset,Boolean testDerivativePricing,doub
     switch (asset) {
     case "RateSwap":
         assetPrice = a+b;
+        break;
     case "Equity":
         if (testDerivativePricing)
             assetPrice= b-c;
-         else
+        else
         assetPrice= 3*a+b+c;
+
+        break;
         
     case "IRS":
         assetPrice= b;
+        break;
     default : 
     assetPrice= a-b+c;
+    break;
     }
 return assetPrice;
 }
