@@ -10,20 +10,24 @@ public class App {
 
 
 public static double TestPricing(String asset,Boolean testDerivativePricing,double a,double b, double c){
+    
+    Double assetPrice = 0;
+    
     switch (asset) {
     case "RateSwap":
-        return a+b;
+        assetPrice = a+b;
     case "Equity":
         if (testDerivativePricing)
-            return b-c;
-        return 3*a+b+c;
+            assetPrice= b-c;
+         else
+        assetPrice= 3*a+b+c;
         
     case "IRS":
-        return b;
+        assetPrice= b;
     default : 
-    return a-b+c;
+    assetPrice= a-b+c;
     }
-
+return assetPrice;
 }
 
 
