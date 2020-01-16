@@ -1,8 +1,20 @@
-public class HelloWorld {
+public class App {
 
-    public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World");
+
+    public static double TestPricing(String asset,Boolean testDerivativePricing){
+        switch (asset) {
+        case "RateSwap":
+            return 1;
+        case "Equity":
+            if (testDerivativePricing)
+                return 2;
+            return 3;
+            
+        case "IRS":
+            return 4;
+        default : 
+        return 0;
+        }
+
     }
-
 }
