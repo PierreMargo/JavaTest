@@ -39,7 +39,7 @@ public static double TestPricing2(String asset,double a,double b, double c){
     public  double TestPricing3(String asset,double a,double b, double c){
         if(asset=="ETF")
         return a-b;
-        return c-a;
+        return 7;
 
 }
 }
