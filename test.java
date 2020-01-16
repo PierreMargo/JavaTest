@@ -1,5 +1,10 @@
 public class App {
 
+        public static void main(String[] args) {
+        TestPricing("Equity",true);
+    }
+    
+    
 
     public static double TestPricing(String asset,Boolean testDerivativePricing){
         switch (asset) {
