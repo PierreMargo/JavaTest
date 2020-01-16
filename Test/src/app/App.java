@@ -9,7 +9,7 @@ public class App {
 
 
 
-public static double TestPricing(String asset,Boolean testDerivativePricing,double a,double b, double c){
+public static Double TestPricing(String asset,Boolean testDerivativePricing,Double a,Double b, Double c){
     switch (asset) {
     case "RateSwap":
         return a+b;
@@ -27,14 +27,14 @@ public static double TestPricing(String asset,Boolean testDerivativePricing,doub
 }
 
 
-public static double TestPricing2(String asset,double a,double b, double c){
+public static Double TestPricing2(String asset,Double a,Double b, Double c){
     if(asset=="Equity")
     return a-b;
     if(asset=="Future")
     return a/b-c;
     return 6;
     }
-    public  double TestPricing3(String asset,double a,double b, double c){
+    public  Double TestPricing3(String asset,Double a,Double b, Double c){
         if(asset=="ETF")
         return a-b;
         return 7;
